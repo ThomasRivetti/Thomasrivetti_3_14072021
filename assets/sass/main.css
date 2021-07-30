@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*couleurs données maquettes*/
+/*couleurs récupérées*/
+body {
+  color: #353535;
+}
+
+.info, .btn__container {
+  text-align: center;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*fonts à télécharger*/
+@font-face {
+  font-family: "shrikhand";
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "roboto black";
+  src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "roboto light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+/*fonts du site*/
+.head__logo,
+.foot__logo {
+  font-family: "shrikhand", sans-serif;
+}
+
+.banner__title {
+  font-family: "shrikhand", sans-serif;
+}
+
+.info__title, .operation__title, .rest__title {
+  font-family: "roboto black", sans-serif;
+  font-size: 2.3rem;
+}
+.info .info__quote, .info .operation__quote, .info .rest__quote {
+  font-family: "roboto light", sans-serif;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #9356dc;
+  color: #f6f6f6;
+  border-radius: 3.6rem;
+  padding: 1.3rem 2rem;
+}
+
+body > header {
+  text-align: center;
+}
+
+.head__logo {
+  display: inline-block;
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1.3rem;
+}
+
+/* footer */
+.foot {
+  background-color: #353535;
+  color: #f6f6f6;
+  padding: 2.5rem;
+}
+.foot__logo {
+  font-size: 1.8rem;
+  padding-bottom: 2.5rem;
+  letter-spacing: 0.05rem;
+}
+.foot__item {
+  padding-bottom: 1rem;
+}
+.foot__item i {
+  padding-right: 1rem;
+}
+.foot__item:last-child {
+  padding-bottom: 0;
+}
+
+.info {
+  background-color: whitesmoke;
+}
+.info__place {
+  background-color: #ebebeb;
+  padding: 1.3rem 1rem;
+}
+.info__block {
+  padding: 5rem;
+}
+.info__title {
+  line-height: 1.3em;
+  margin-bottom: 1.8rem;
+}
+.info__quote {
+  margin-bottom: 3rem;
+}
+
+.operation {
+  padding-left: 2.6rem;
+}
+
+.rest {
+  background-color: whitesmoke;
+}/*# sourceMappingURL=main.css.map */

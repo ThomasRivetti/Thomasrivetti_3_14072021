@@ -1,0 +1,25 @@
+/* footer */  
+
+.foot{
+    background-color: lighten($color-dark, 21%);
+    color: lighten($color-dark, 96%);
+    padding: 2.5rem;
+    
+    &__logo {
+        font-size: 1.8rem;
+        padding-bottom: 2.5rem;
+        letter-spacing: 0.05rem;
+    }
+
+    &__item {
+        padding-bottom: 1rem;
+
+        i {
+            padding-right: 1rem;
+        }
+
+        &:last-child  {
+            padding-bottom: 0;
+        }
+    }
+}

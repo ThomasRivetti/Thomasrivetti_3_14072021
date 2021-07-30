@@ -1,0 +1,77 @@
+/*base typography*/
+//fonts à télécharger
+@font-face {
+    font-family: 'shrikhand';
+    src: url('../fonts/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'roboto black';
+    src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'roboto light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+/*page typo fonts du site*/
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+.head,
+.foot {
+    &__logo  {
+        font-family: 'shrikhand', sans-serif;
+    }
+}
+.banner__title {
+    font-family: 'shrikhand', sans-serif;
+}
+
+.info, 
+.operation, 
+.rest{
+    &__title {
+        font-family: 'roboto black', sans-serif;
+        font-size: 2.3rem;
+    }
+    &__name {
+        font-family: 'roboto-bold', sans-serif;
+        font-size: 1.8rem;
+    }
+    &__new {
+        font-family: 'roboto bold';
+        font-size: 1.3rem;
+    }  
+}
+
+.info__quote {
+    font-family: 'roboto light', sans-serif;
+}
+
+.operation__list {
+    font-family: 'roboto bold';
+    &::before {
+        font-family: 'roboto light';
+        font-size: 1.2rem;
+    }
+}
+.menu__check {
+    font-size: 2rem;
+}
+    

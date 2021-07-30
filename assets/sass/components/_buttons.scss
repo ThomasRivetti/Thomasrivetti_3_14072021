@@ -1,0 +1,16 @@
+/*components buttons*/
+.btn {
+    display: inline-block;
+    background-color: $color-primary;
+    box-shadow: 0px 6px 14px lighten($color-dark,76%);
+    color: lighten($color-dark, 96%);
+    border-radius: 3.6rem;
+    padding: 1.3rem 2rem;
+    background: linear-gradient(175deg, $color-secondary 0%, $color-primary 100%);
+    &:hover {
+        background-color: lighten($color-primary, 20%);
+        background: linear-gradient(175deg, lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
+        box-shadow: 0px 12px 22px lighten($color-dark,76%);
+        transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    } 
+}

@@ -1,0 +1,64 @@
+.heading {
+    display: flex;
+    align-items: center;
+    margin: 0 2.3rem;
+       
+    &__logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.banner {
+    & img {
+        width: 100%;
+        display: block;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 40px 40px 0 0;
+        background-color: lighten($color-dark, 96%);
+        position: relative;
+        top: -3rem;
+        padding: 2rem 3.5rem 0 2rem;
+    }
+}
+
+.menu {
+    &__container {
+        background-color: lighten($color-dark, 96%);
+        width: 100%;
+    }
+    &__block {
+        border-radius: 15px;
+        background-color: lighten($color-dark, 100%);
+        box-shadow: 0px 6px 14px 0px lighten($color-dark,86%);
+        margin: 1.2rem;
+        
+        display: flex; 
+        height: 7rem;  
+    }
+    &__elements {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5rem 0 1.5rem 1rem;
+    }
+    &__legend {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__check {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 2.5rem;
+        border-radius: 0 15px 15px 0;
+        
+        background-color: $color-tertiary;
+        color: lighten($color-dark, 96%);
+        // &:hover {
+            
+        // }
+    }
+}

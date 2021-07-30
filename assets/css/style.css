@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/*couleurs données maquettes*/
+/*couleurs récupérées*/
+/*utils functions*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*base typography*/
+@font-face {
+  font-family: "shrikhand";
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "roboto black";
+  src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "roboto light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+/*page typo fonts du site*/
+body {
+  font-family: "roboto", sans-serif;
+}
+
+.head__logo,
+.foot__logo {
+  font-family: "shrikhand", sans-serif;
+}
+
+.banner__title {
+  font-family: "shrikhand", sans-serif;
+}
+
+.info__title,
+.operation__title,
+.rest__title {
+  font-family: "roboto black", sans-serif;
+  font-size: 2.3rem;
+}
+.info__name,
+.operation__name,
+.rest__name {
+  font-family: "roboto-bold", sans-serif;
+  font-size: 1.8rem;
+}
+.info__new,
+.operation__new,
+.rest__new {
+  font-family: "roboto bold";
+  font-size: 1.3rem;
+}
+
+.info__quote {
+  font-family: "roboto light", sans-serif;
+}
+
+.operation__list {
+  font-family: "roboto bold";
+}
+.operation__list::before {
+  font-family: "roboto light";
+  font-size: 1.2rem;
+}
+
+.menu__check {
+  font-size: 2rem;
+}
+
+/*base base*/
+body {
+  color: black;
+}
+
+.info, .btn__container {
+  text-align: center;
+}
+
+/*header*/
+body > header {
+  text-align: center;
+}
+
+.head__logo {
+  display: inline-block;
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1.3rem;
+}
+
+/*page home*/
+.info {
+  background-color: whitesmoke;
+}
+.info__place {
+  background-color: #ebebeb;
+  padding: 1.3rem 1rem;
+  box-shadow: inset 0px 5px 5px 0px #dbdbdb;
+}
+.info__block {
+  padding: 5rem;
+}
+.info__title {
+  line-height: 1.3em;
+  margin-bottom: 1.8rem;
+}
+.info__quote {
+  margin-bottom: 3rem;
+}
+
+.operation {
+  padding-top: 5rem;
+}
+.operation__lists {
+  list-style: none;
+  counter-reset: li;
+}
+.operation__list {
+  display: flex;
+  position: relative;
+  border-radius: 30px;
+  background-color: whitesmoke;
+  box-shadow: 0px 6px 14px 0px #dbdbdb;
+  margin: 2.4rem;
+  padding: 2.4rem;
+  counter-increment: li;
+}
+.operation__list::before {
+  content: counter(li);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -1.3rem;
+  background-color: #9256dc;
+  color: whitesmoke;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+}
+.operation__ico {
+  margin: 0 2rem 0 1rem;
+  color: #7d7d7d;
+}
+
+.operation__title, .rest__title {
+  padding-left: 2rem;
+}
+
+.rest {
+  background-color: whitesmoke;
+  padding: 6rem 0;
+}
+.rest__block {
+  border-radius: 15px;
+  margin: 2rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 6px 14px 0px #dbdbdb;
+  position: relative;
+}
+.rest__block:last-child {
+  margin-bottom: 0;
+}
+.rest img {
+  display: block;
+  width: 100%;
+  max-height: 175px;
+  object-fit: cover;
+  object-position: center center;
+}
+.rest__imglegend {
+  display: flex;
+  padding: 2rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.rest__new {
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  background-color: #98e2cf;
+  color: #2c9b7f;
+  padding: 0.6rem 1rem;
+  border-radius: 3px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin: 0 2.3rem;
+}
+.heading__logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+.banner__block {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px 40px 0 0;
+  background-color: whitesmoke;
+  position: relative;
+  top: -3rem;
+  padding: 2rem 3.5rem 0 2rem;
+}
+
+.menu__container {
+  background-color: whitesmoke;
+  width: 100%;
+}
+.menu__block {
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 6px 14px 0px #dbdbdb;
+  margin: 1.2rem;
+  display: flex;
+  height: 7rem;
+}
+.menu__elements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem 0 1.5rem 1rem;
+}
+.menu__legend {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__check {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2.5rem;
+  border-radius: 0 15px 15px 0;
+  background-color: #98e2cf;
+  color: whitesmoke;
+}
+
+/*components buttons*/
+.btn {
+  display: inline-block;
+  background-color: #9256dc;
+  box-shadow: 0px 6px 14px #c2c2c2;
+  color: whitesmoke;
+  border-radius: 3.6rem;
+  padding: 1.3rem 2rem;
+  background: linear-gradient(175deg, #ff7ad9 0%, #9256dc 100%);
+}
+.btn:hover {
+  background-color: #c9aaee;
+  background: linear-gradient(175deg, #ff94e1 0%, #a06be1 100%);
+  box-shadow: 0px 12px 22px #c2c2c2;
+  transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+/* footer */
+.foot {
+  background-color: #363636;
+  color: whitesmoke;
+  padding: 2.5rem;
+}
+.foot__logo {
+  font-size: 1.8rem;
+  padding-bottom: 2.5rem;
+  letter-spacing: 0.05rem;
+}
+.foot__item {
+  padding-bottom: 1rem;
+}
+.foot__item i {
+  padding-right: 1rem;
+}
+.foot__item:last-child {
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
