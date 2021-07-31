@@ -39,6 +39,13 @@
         padding: 2.4rem;
         counter-increment: li;
 
+        &:hover {
+            background-color: rgba($color-primary, 0.1);
+            :nth-child(1){
+                color: $color-primary;
+            }         
+        }
+
         &::before {
             content: counter(li);
             display: flex;
@@ -50,12 +57,13 @@
             color: lighten($color-dark, 96%);
             width: 2.6rem;
             height: 2.6rem;
-            border-radius: 50%;   
+            border-radius: 50%;  
         }        
     }
     &__ico {
         margin: 0 2rem 0 1rem;
         color: lighten($color-dark, 49%);
+        
     }  
 }
 .operation, .rest {

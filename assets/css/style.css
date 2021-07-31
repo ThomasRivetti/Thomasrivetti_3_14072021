@@ -207,6 +207,12 @@ body > header {
   padding: 2.4rem;
   counter-increment: li;
 }
+.operation__list:hover {
+  background-color: rgba(146, 86, 220, 0.1);
+}
+.operation__list:hover :nth-child(1) {
+  color: #9256dc;
+}
 .operation__list::before {
   content: counter(li);
   display: flex;
@@ -295,14 +301,14 @@ body > header {
   margin-bottom: 4rem;
 }
 .menu__main-title {
-  display: inline-block;
   margin-left: 2rem;
-  padding-bottom: 1rem;
 }
 .menu__main-title::after {
-  content: border;
+  display: block;
+  content: "";
   width: 40px;
   border-bottom: 3px #98e2cf solid;
+  padding-bottom: 1rem;
 }
 .menu__container {
   background-color: whitesmoke;
@@ -343,6 +349,17 @@ body > header {
   background: linear-gradient(175deg, #ff7ad9 0%, #9256dc 100%);
 }
 .btn:hover {
+  background-color: #c9aaee;
+  background: linear-gradient(175deg, #ff94e1 0%, #a06be1 100%);
+  box-shadow: 0px 12px 22px #c2c2c2;
+  transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.fa-heart::after {
+  display: block;
+  font-weight: bold;
+}
+.fa-heart:hover {
   background-color: #c9aaee;
   background: linear-gradient(175deg, #ff94e1 0%, #a06be1 100%);
   box-shadow: 0px 12px 22px #c2c2c2;

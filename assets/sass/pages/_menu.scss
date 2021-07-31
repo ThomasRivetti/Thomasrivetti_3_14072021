@@ -29,14 +29,15 @@
         margin-bottom: 4rem;
     }
     &__main-title {
-        display: inline-block;
         margin-left: 2rem;
         // margin-top: 4rem;
-        padding-bottom: 1rem;
+        
         &::after{
-            content: border;
+            display: block;
+            content: "";
             width: 40px;
             border-bottom: 3px $color-tertiary solid;
+            padding-bottom: 1rem;
         }
     }
     &__container {
