@@ -48,15 +48,15 @@ body {
 .rest{
     &__title {
         font-family: 'roboto black', sans-serif;
-        font-size: 2.3rem;
+        font-size: $font-size-ttl;
     }
     &__name {
         font-family: 'roboto-bold', sans-serif;
-        font-size: 1.8rem;
+        font-size: $font-size-subttl;
     }
     &__new {
         font-family: 'roboto bold';
-        font-size: 1.3rem;
+        font-size: $font-size-txt;
     }  
 }
 
@@ -65,13 +65,27 @@ body {
 }
 
 .operation__list {
-    font-family: 'roboto bold';
+    font-family: 'roboto bold', sans-serif;
     &::before {
         font-family: 'roboto light';
-        font-size: 1.2rem;
+        font-size: $font-size-txt;
     }
 }
-.menu__check {
-    font-size: 2rem;
+.menu {
+    &__dish {
+        font-family: 'roboto-bold', sans-serif;
+        font-size: $font-size-subttl;
+
+    }
+    &__check{
+        font-size: $font-size-ico;
+    }
 }
-    
+.foot {
+    &__items {
+        font-size: $font-size-txt;
+    }
+    &__logo {
+        font-size: $font-size-subttl;
+    }
+}   

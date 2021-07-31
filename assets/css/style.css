@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*couleurs données maquettes*/
 /*couleurs récupérées*/
+/*font*/
 /*utils functions*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -95,7 +96,7 @@ body {
 .operation__title,
 .rest__title {
   font-family: "roboto black", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
 }
 .info__name,
 .operation__name,
@@ -107,7 +108,7 @@ body {
 .operation__new,
 .rest__new {
   font-family: "roboto bold";
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .info__quote {
@@ -115,15 +116,26 @@ body {
 }
 
 .operation__list {
-  font-family: "roboto bold";
+  font-family: "roboto bold", sans-serif;
 }
 .operation__list::before {
   font-family: "roboto light";
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
+.menu__dish {
+  font-family: "roboto-bold", sans-serif;
+  font-size: 1.8rem;
+}
 .menu__check {
   font-size: 2rem;
+}
+
+.foot__items {
+  font-size: 1.6rem;
+}
+.foot__logo {
+  font-size: 1.8rem;
 }
 
 /*base base*/
@@ -289,6 +301,7 @@ body > header {
 .menu__legend {
   display: flex;
   justify-content: space-between;
+  padding-right: 2.3rem;
 }
 .menu__check {
   display: flex;
@@ -324,7 +337,6 @@ body > header {
   padding: 2.5rem;
 }
 .foot__logo {
-  font-size: 1.8rem;
   padding-bottom: 2.5rem;
   letter-spacing: 0.05rem;
 }
