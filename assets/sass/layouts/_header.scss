@@ -5,7 +5,7 @@ body > header {
 }
 .head__logo {
     display: inline-block;
-    font-size: 3rem;
+    font-size: $font-size-mainlogo;
     padding-top: 2rem;
     padding-bottom: 1.3rem;  
 }

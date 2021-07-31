@@ -83,6 +83,10 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+i {
+  font-size: 2rem;
+}
+
 .head__logo,
 .foot__logo {
   font-family: "shrikhand", sans-serif;
@@ -90,6 +94,7 @@ body {
 
 .banner__title {
   font-family: "shrikhand", sans-serif;
+  font-size: 2.8rem;
 }
 
 .info__title,
@@ -123,6 +128,9 @@ body {
   font-size: 1.6rem;
 }
 
+.menu__main-title {
+  text-transform: uppercase;
+}
 .menu__dish {
   font-family: "roboto-bold", sans-serif;
   font-size: 1.8rem;
@@ -136,6 +144,9 @@ body {
 }
 .foot__logo {
   font-size: 1.8rem;
+}
+.foot i {
+  font-size: 1.3rem;
 }
 
 /*base base*/
@@ -280,9 +291,23 @@ body > header {
   padding: 2rem 3.5rem 0 2rem;
 }
 
+.menu__blocklist {
+  margin-bottom: 4rem;
+}
+.menu__main-title {
+  display: inline-block;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+}
+.menu__main-title::after {
+  content: border;
+  width: 40px;
+  border-bottom: 3px #98e2cf solid;
+}
 .menu__container {
   background-color: whitesmoke;
   width: 100%;
+  padding-bottom: 8rem;
 }
 .menu__block {
   border-radius: 15px;
@@ -304,13 +329,7 @@ body > header {
   padding-right: 2.3rem;
 }
 .menu__check {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 2.5rem;
-  border-radius: 0 15px 15px 0;
-  background-color: #98e2cf;
-  color: whitesmoke;
+  display: none;
 }
 
 /*components buttons*/
