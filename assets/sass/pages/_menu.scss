@@ -96,11 +96,12 @@
     
     &__check {
         display: none;
-    }
+        }
+    
 
     // &__check {
     //     display: none;
-    //     &:hover, :active{
+    //     &:hover{
     //         display: flex;
     //         justify-content: flex-end;
     //         align-items: center;
@@ -109,4 +110,5 @@
     //         background-color: $color-tertiary;
     //         color: lighten($color-dark, 96%);
     //     }
+    // }
 }

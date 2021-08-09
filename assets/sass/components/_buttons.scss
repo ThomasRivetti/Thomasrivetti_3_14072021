@@ -19,40 +19,31 @@
 .icon {
     font-size: 2rem;
     &--default {
-        transition: opacity .3s, transform .3s;
+        transition: opacity .3s;
         display: block;
         position: absolute;
         right: 35px;
         
         &:hover {
             opacity: 0;
-            // background-clip: text;
-            // -webkit-background-clip: text;
-            // -webkit-text-fill-color: transparent;
         }
     }
 
     &--hover {
-        transition: opacity .3s, transform .3s;
+        transition: opacity .3s;
+        transform: scale(1.1);
         opacity: 0;
         display: block;
         position: absolute;
         right: 35px;
+        background: -webkit-linear-gradient(175deg, lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: ease-in-out 0.5s;
         
         &:hover {
             opacity: 1;
-            // background-clip: text;
-            // -webkit-background-clip: text;
-            // color: transparent;
-            // background-color: lighten($color-primary, 20%);
-            // background:linear-gradient(lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
-	        // -webkit-text-fill-color: transparent;
-            // text-shadow: 0px 12px 22px lighten($color-dark,76%);
-            // transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
-            background: -webkit-linear-gradient(175deg, lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }        
     }
 
