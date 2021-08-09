@@ -337,12 +337,12 @@ body > header {
   position: relative;
   top: -3rem;
   padding: 2rem 3.5rem 0 2rem;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .menus {
     display: flex;
-    flex-direction: row;
     flex-flow: wrap;
   }
 
@@ -465,15 +465,29 @@ body > header {
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
-.fa-heart::after {
-  display: block;
-  font-weight: bold;
-  content: "";
+.icon {
+  font-size: 2rem;
 }
-.fa-heart:hover {
-  background-color: #c9aaee;
+.icon--default {
+  transition: opacity 0.3s, transform 0.3s;
+  display: block;
+  position: absolute;
+  right: 35px;
+}
+.icon--default:hover {
+  opacity: 0;
+}
+.icon--hover {
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  right: 35px;
+}
+.icon--hover:hover {
+  opacity: 1;
   background: linear-gradient(175deg, #ff94e1 0%, #a06be1 100%);
-  box-shadow: 0px 12px 22px #c2c2c2;
+  text-shadow: 0px 12px 22px #c2c2c2;
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 

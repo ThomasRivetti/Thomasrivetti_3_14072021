@@ -21,14 +21,14 @@
         position: relative;
         top: -3rem;
         padding: 2rem 3.5rem 0 2rem;
+        position: relative;
     }
 }
 
 @media screen and (min-width: 768px){
     
     .menus { 
-        display: flex;
-        flex-direction: row; 
+        display: flex; 
         flex-flow: wrap;   
     }
     .banner img {

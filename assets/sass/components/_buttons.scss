@@ -14,18 +14,40 @@
         transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
     } 
 }
-.fa-heart {
-    &::after {
+
+
+.icon {
+    font-size: 2rem;
+    &--default {
+        transition: opacity .3s, transform .3s;
         display: block;
-        font-weight: bold;
-        content: "";    
+        position: absolute;
+        right: 35px;
+        
+        &:hover {
+            opacity: 0;
+        }
     }
-    
-    &:hover {
-            background-color: lighten($color-primary, 20%);
+
+    &--hover {
+        transition: opacity .3s, transform .3s;
+        opacity: 0;
+        display: block;
+        position: absolute;
+        right: 35px;
+        
+        &:hover {
+            opacity: 1;
+            // background-color: lighten($color-primary, 20%);
             background: linear-gradient(175deg, lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
-            box-shadow: 0px 12px 22px lighten($color-dark,76%);
+            text-shadow: 0px 12px 22px lighten($color-dark,76%);
             transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
-        } 
+        
+    }
+
+    
+    
+}
+
     
 }
