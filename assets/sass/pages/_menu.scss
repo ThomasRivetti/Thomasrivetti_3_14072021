@@ -48,7 +48,7 @@
     &__block {
         border-radius: 15px;
         background-color: lighten($color-dark, 100%);
-        box-shadow: 0px 6px 14px 0px lighten($color-dark,86%);
+        box-shadow: $box-shadow-out;
         margin: 1.2rem;
         
         display: flex; 

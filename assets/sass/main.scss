@@ -1,3 +1,6 @@
+
+
+@import './utils/keyframes';
 @import './utils/variables';
 @import './utils/functions';
 
@@ -12,6 +15,7 @@
 @import './pages/home';
 @import './pages/menu';
 
+@import './components/loader';
 @import './components/logo';
 @import './components/buttons';
 @import './layouts/footer';

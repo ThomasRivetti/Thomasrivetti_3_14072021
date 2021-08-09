@@ -1,7 +1,36 @@
 @charset "UTF-8";
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /*couleurs données maquettes*/
 /*couleurs récupérées*/
 /*font*/
+/*style*/
 /*utils functions*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -336,6 +365,45 @@ body > header {
 }
 .menu__check {
   display: none;
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: loader 0.02s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader__item {
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 1rem;
+  animation: jump 1s;
+  animation-iteration-count: 2;
+}
+.loader__itemContainer {
+  display: flex;
+  width: 5rem;
+  justify-content: space-between;
+}
+.loader__item--1 {
+  background-color: #9256dc;
+}
+.loader__item--2 {
+  background-color: #ff7ad9;
+  animation-delay: 0.25s;
+}
+.loader__item--3 {
+  background-color: #98e2cf;
+  animation-delay: 0.5s;
 }
 
 /*components buttons*/
