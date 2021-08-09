@@ -24,9 +24,26 @@
     }
 }
 
+@media screen and (min-width: 768px){
+    
+    .menus { 
+        display: flex;
+        flex-direction: row; 
+        flex-flow: wrap;   
+    }
+    .banner img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+    
 .menu {
+    flex: 1 1 auto;
+    
     &__blocklist {
         margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
     }
     &__main-title {
         margin-left: 2rem;
@@ -50,8 +67,8 @@
         background-color: lighten($color-dark, 100%);
         box-shadow: $box-shadow-out;
         margin: 1.2rem;
-        
-        display: flex; 
+        display: flex;
+        flex-wrap: wrap; 
         height: 7rem;  
     }
     &__elements {
@@ -65,6 +82,18 @@
         justify-content: space-between;
         padding-right: 2.3rem;
     }
+    &__dish {
+        white-space: nowrap;
+        text-overflow: ellipsis; 
+        overflow: hidden;      
+    }
+    &__description{
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;        
+    }
+    
     &__check {
         display: none;
     }

@@ -1,5 +1,29 @@
 /*page home*/
-
+@media  screen and (min-width:768px) {
+    .operation {
+        &__title {
+            text-align: center;
+        }
+        &__lists {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+    }
+    .rest{
+        &__title {
+            text-align: center;
+        }
+        &__blocklist{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__list{
+            width: 50%;
+        }
+    }
+    
+}
 
 
 .info {
