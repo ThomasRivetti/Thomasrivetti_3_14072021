@@ -62,25 +62,41 @@
         width: 100%;
         padding-bottom: 8rem;
     }
-    &__block {
-        border-radius: 15px;
+    &__block {  
         background-color: lighten($color-dark, 100%);
-        box-shadow: $box-shadow-out;
+        height: 7rem;
+        border-radius: 15px;
         margin: 1.2rem;
+        box-shadow: $box-shadow-out;        
         display: flex;
-        flex-wrap: wrap; 
-        height: 7rem;  
+        flex-wrap: wrap;
+        /*animation du check*/
+        overflow: hidden;
+        
+
+        &:hover .menu__check{
+            margin-right: 0;               
+        }
+        & i.fas.fa-check-circle{
+            transform: rotate(-180deg);
+            transition: transform 0.5s 0.15s;
+        }
+        &:hover i.fas.fa-check-circle {
+            transform: rotate(0);
+        }
+
     }
     &__elements {
         display: flex;
+        flex: 1;
         flex-direction: column;
-        width: 100%;
-        padding: 1.5rem 0 1.5rem 1rem;
+        padding: 1rem;
+
+        
     }
     &__legend {
         display: flex;
-        justify-content: space-between;
-        padding-right: 2.3rem;
+        justify-content: space-between; 
     }
     &__dish {
         white-space: nowrap;
@@ -94,21 +110,21 @@
         overflow: hidden;        
     }
     
-    &__check {
-        display: none;
-        }
-    
 
-    // &__check {
-    //     display: none;
-    //     &:hover{
-    //         display: flex;
-    //         justify-content: flex-end;
-    //         align-items: center;
-    //         padding: 0 2.5rem;
-    //         border-radius: 0 15px 15px 0;
-    //         background-color: $color-tertiary;
-    //         color: lighten($color-dark, 96%);
-    //     }
-    // }
+    &__check {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 15px 15px 0;
+        background-color: $color-tertiary;
+        color: lighten($color-dark, 96%);
+        width: 6rem;
+        margin: 0rem -7rem -1rem 1rem;
+        transition: margin-right 0.5s;
+
+        
+        
+        
+    }
 }
