@@ -21,6 +21,8 @@
         position: relative;
         top: -3rem;
         padding: 2rem 3.5rem 0 2rem;
+        max-width: 1440px;
+        margin: 0 auto;
     }
 }
 
@@ -35,13 +37,20 @@
         object-fit: cover;
     }
 }
+.menus {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
     
 .menu {
     flex: 1 1 33.33%;
+            
     &__blocklist {
         margin-bottom: 4rem;
         display: flex;
         flex-direction: column;
+        
     }
     &__main-title {
         margin-left: 2rem;
@@ -57,7 +66,7 @@
     &__container {
         background-color: lighten($color-dark, 96%);
         width: 100%;
-        padding-bottom: 8rem;
+        padding-bottom: 8rem;        
     }
     &__block { 
         position: relative; 

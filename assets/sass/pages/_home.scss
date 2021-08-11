@@ -48,6 +48,8 @@
 }
 .operation {
     padding-top: 5rem;
+    max-width: 1440px;
+    margin: 0 auto;
 
     &__lists {
         list-style: none;
@@ -99,7 +101,10 @@
 .rest {
     background-color: lighten($color-dark, 96%);
     padding: 6rem 0;
-
+    &__blocklist {
+        max-width: 1440PX;
+        margin: 0 auto;
+    }
     &__block  {
         border-radius: 15px;
         margin: 2rem;

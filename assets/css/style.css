@@ -243,6 +243,8 @@ body > header {
 
 .operation {
   padding-top: 5rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .operation__lists {
   list-style: none;
@@ -289,6 +291,10 @@ body > header {
 .rest {
   background-color: whitesmoke;
   padding: 6rem 0;
+}
+.rest__blocklist {
+  max-width: 1440PX;
+  margin: 0 auto;
 }
 .rest__block {
   border-radius: 15px;
@@ -347,6 +353,8 @@ body > header {
   position: relative;
   top: -3rem;
   padding: 2rem 3.5rem 0 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -360,6 +368,12 @@ body > header {
     object-fit: cover;
   }
 }
+.menus {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .menu {
   flex: 1 1 33.33%;
 }
@@ -564,6 +578,10 @@ body > header {
   color: whitesmoke;
   padding: 2.5rem;
 }
+.foot__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .foot__logo {
   padding-bottom: 2.5rem;
   letter-spacing: 0.05rem;
@@ -579,6 +597,23 @@ body > header {
 }
 .foot__item a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .foot__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+  }
+  .foot__item {
+    margin: 0 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
