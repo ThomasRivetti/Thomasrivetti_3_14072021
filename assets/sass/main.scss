@@ -2,7 +2,7 @@
 
 @import './utils/keyframes';
 @import './utils/variables';
-@import './utils/functions';
+@import './utils/mixins';
 
 @import './base/reset';
 @import './base/typography';
@@ -16,6 +16,5 @@
 @import './pages/menu';
 
 @import './components/loader';
-@import './components/logo';
 @import './components/buttons';
 @import './layouts/footer';

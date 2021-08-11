@@ -38,7 +38,6 @@
     
 .menu {
     flex: 1 1 33.33%;
-    
     &__blocklist {
         margin-bottom: 4rem;
         display: flex;
@@ -46,8 +45,7 @@
     }
     &__main-title {
         margin-left: 2rem;
-        // margin-top: 4rem;
-        
+                
         &::after{
             display: block;
             content: "";
@@ -76,14 +74,12 @@
         opacity: 0;
         animation: slide 0.3s linear;
         animation-fill-mode:forwards;
-        animation-delay: 1s;
+        animation-delay: .6s;
         @for $i from 1 through 9{
             &:nth-child(#{$i}){
-                animation-delay: $i * 0.3s;
+                animation-delay: $i * .3s;
             }
         }
-        
-
         &:hover .menu__check{
             margin-right: -1rem;               
         }
@@ -94,37 +90,25 @@
         &:hover i.fas.fa-check-circle {
             transform: rotate(0);
         }
-
     }
     &__elements {
         display: flex;
         flex: 1;
         justify-content: space-between;
         flex-direction: column;
-        white-space: nowrap;
-        text-overflow: ellipsis; 
-        overflow: hidden;
-       
-
-        
+        @include ellipsis;    
     }
     &__dish {
-        white-space: nowrap;
-        text-overflow: ellipsis; 
-        overflow: hidden;      
+        @include ellipsis;      
     }
     &__description {    
         margin: 0;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;        
+        @include ellipsis;        
     }
     &__price {
         display: flex;
         align-items: flex-end;
     }
-    
-
     &__check {
         display: flex;
         justify-content: center;
@@ -135,9 +119,5 @@
         width: 5rem;
         margin: -1rem -6rem -1rem 1rem;
         transition: margin-right 0.5s;
-
-        
-        
-        
     }
 }

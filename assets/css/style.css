@@ -33,7 +33,6 @@
 /*couleurs récupérées*/
 /*font*/
 /*style*/
-/*utils functions*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -399,7 +398,7 @@ body > header {
   opacity: 0;
   animation: slide 0.3s linear;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 .menu__block:nth-child(1) {
   animation-delay: 0.3s;
@@ -544,7 +543,7 @@ body > header {
 }
 .icon--hover {
   transition: opacity 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.2);
   opacity: 0;
   display: block;
   position: absolute;

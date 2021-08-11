@@ -21,10 +21,8 @@
         &__list{
             width: 50%;
         }
-    }
-    
+    }  
 }
-
 
 .info {
     background-color: lighten($color-dark, 96%);
@@ -114,14 +112,12 @@
         }
     }
     
-
     img {
         display: block;
         width: 100%;
         max-height: 175px;
         object-fit: cover;
-        object-position: center center;
-        
+        object-position: center center;        
     }
 
     &__imglegend {
@@ -138,7 +134,6 @@
         color: darken($color-tertiary, 35%);
         padding: 0.6rem 1rem;
         border-radius: 3px;
-        animation: ease-in-out;
-        
+        animation: ease-in-out;        
     }
 }
