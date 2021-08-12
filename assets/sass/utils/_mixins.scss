@@ -3,3 +3,10 @@
     text-overflow: ellipsis;
     overflow: hidden;    
 }
+
+@mixin positionItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

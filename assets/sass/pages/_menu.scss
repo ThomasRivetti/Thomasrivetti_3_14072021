@@ -8,11 +8,14 @@
         margin-right: auto;
     }
 }
+
+
 .banner {
     & img {
         width: 100%;
         display: block;
     }
+
     &__block {
         display: flex;
         justify-content: space-between;
@@ -26,17 +29,21 @@
     }
 }
 
+
 @media screen and (min-width: 768px){
     
     .menus { 
         display: flex; 
         flex-flow: wrap;   
     }
+
     .banner img {
         max-height: 300px;
         object-fit: cover;
     }
 }
+
+
 .menus {
     max-width: 1440px;
     margin: 0 auto;
@@ -50,8 +57,8 @@
         margin-bottom: 4rem;
         display: flex;
         flex-direction: column;
-        
     }
+
     &__main-title {
         margin-left: 2rem;
                 
@@ -63,11 +70,13 @@
             padding-bottom: 1rem;
         }
     }
+
     &__container {
         background-color: lighten($color-dark, 96%);
         width: 100%;
         padding-bottom: 8rem;        
     }
+
     &__block { 
         position: relative; 
         cursor: pointer;
@@ -84,22 +93,27 @@
         animation: slide 0.3s linear;
         animation-fill-mode:forwards;
         animation-delay: .6s;
+
         @for $i from 1 through 9{
             &:nth-child(#{$i}){
                 animation-delay: $i * .3s;
             }
         }
+
         &:hover .menu__check{
             margin-right: -1rem;               
         }
+
         & i.fas.fa-check-circle{
             transform: rotate(-180deg);
             transition: transform 0.5s 0.15s;
         }
+
         &:hover i.fas.fa-check-circle {
             transform: rotate(0);
         }
     }
+
     &__elements {
         display: flex;
         flex: 1;
@@ -107,21 +121,23 @@
         flex-direction: column;
         @include ellipsis;    
     }
+
     &__dish {
         @include ellipsis;      
     }
+
     &__description {    
         margin: 0;
         @include ellipsis;        
     }
+
     &__price {
         display: flex;
         align-items: flex-end;
     }
+
     &__check {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include positionItem;
         border-radius: 0 15px 15px 0;
         background-color: $color-tertiary;
         color: lighten($color-dark, 96%);

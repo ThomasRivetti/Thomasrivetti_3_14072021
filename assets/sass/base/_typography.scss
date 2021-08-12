@@ -32,6 +32,7 @@
 body {
     font-family: 'roboto', sans-serif;
 }
+
 i {
     font-size: $font-size-ico;
 }
@@ -42,6 +43,7 @@ i {
         font-family: 'shrikhand', sans-serif;
     }
 }
+
 .banner__title {
     font-family: 'shrikhand', sans-serif;
     font-size: $font-size-restname;
@@ -75,25 +77,31 @@ i {
         font-size: $font-size-txt;
     }
 }
+
 .menu {
     &__main-title {
         text-transform: uppercase;
     }
+
     &__dish {
         font-family: 'roboto-bold', sans-serif;
         font-size: $font-size-subttl;
     }
+
     &__check{
         font-size: $font-size-ico;
     }
 }
+
 .foot {
     &__items {
         font-size: $font-size-txt;
     }
+
     &__logo {
         font-size: $font-size-subttl;
     }
+
     & i {
         font-size: 1.3rem;
     }

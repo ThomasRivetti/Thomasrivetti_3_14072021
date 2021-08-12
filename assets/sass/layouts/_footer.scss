@@ -8,9 +8,8 @@
     &__container {
     max-width: 1440px;
     margin: 0 auto;
+    }
 
-
-    }       
     &__logo {
         padding-bottom: 2.5rem;
         letter-spacing: 0.05rem;
@@ -36,18 +35,19 @@
     .foot {
         &__container {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
         }
+
         &__list {
             display: flex;
             flex-wrap: wrap;
             width: 50%;
             justify-content: space-around
         }
+
         &__item {
             margin: 0 2rem;
         }
     }
-    
 }

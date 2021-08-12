@@ -4,20 +4,24 @@
         &__title {
             text-align: center;
         }
+
         &__lists {
             display: flex;
             justify-content: space-around;
             flex-direction: row;
         }
     }
+
     .rest{
         &__title {
             text-align: center;
         }
+
         &__blocklist{
             display: flex;
             flex-wrap: wrap;
         }
+
         &__list{
             width: 50%;
         }
@@ -26,8 +30,7 @@
 
 .info {
     background-color: lighten($color-dark, 96%);
-    
-    
+        
     &__place {
         background-color: lighten($color-dark, 92%);
         padding: 1.3rem 1rem;
@@ -42,10 +45,12 @@
         line-height: 1.3em;
         margin-bottom: 1.8rem;
     }
+    
     &__quote {
         margin-bottom: 3rem;
     }
 }
+
 .operation {
     padding-top: 5rem;
     max-width: 1440px;
@@ -75,9 +80,7 @@
 
         &::before {
             content: counter(li);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include positionItem;
             position: absolute;
             left: -1.3rem;
             background-color: $color-primary;
@@ -87,17 +90,19 @@
             border-radius: 50%;  
         }        
     }
+
     &__ico {
         margin: 0 2rem 0 1rem;
         color: lighten($color-dark, 49%);
-        
     }  
 }
+
 .operation, .rest {
     &__title {
         padding-left: 2rem;
     }
 }
+
 .rest {
     background-color: lighten($color-dark, 96%);
     padding: 6rem 0;
@@ -105,6 +110,7 @@
         max-width: 1440PX;
         margin: 0 auto;
     }
+
     &__block  {
         border-radius: 15px;
         margin: 2rem;
@@ -131,6 +137,7 @@
         align-items: baseline;
         justify-content: space-between;
     }
+
     &__new {
         position: absolute;
         top: 1.3rem;
