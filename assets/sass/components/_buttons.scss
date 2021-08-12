@@ -20,12 +20,14 @@
     position: relative;
     width: 2rem;
     height: 2rem;
+    // display: flex;
+    @include positionItem;
 
     &--default {
         @include positionItem;
         transition: opacity .3s;
         position: absolute;
-        transform: scale(1);       
+        transform: scale(0.85);               
         
         &:hover {
             opacity: 0;           
@@ -36,13 +38,13 @@
         @include positionItem;
         position: absolute;
         transition: opacity .3s;
-        transform: scale(1.05);
+        transform: scale(1);
         opacity: 0;        
         background: -webkit-linear-gradient(175deg, lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: ease-in-out 0.3s;
+        transition: ease-in-out 3s;
         
         &:hover {
             opacity: 1;
