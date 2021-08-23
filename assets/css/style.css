@@ -579,7 +579,7 @@ body > header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: ease-in-out 3s;
+  transition: ease-in-out 0.3s;
 }
 .icon--hover:hover {
   opacity: 1;

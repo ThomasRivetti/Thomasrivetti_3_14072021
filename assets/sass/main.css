@@ -114,6 +114,10 @@ a {
   text-decoration: inherit;
 }
 
+.fa, .fab, .fad, .fal, .far, .fas {
+  display: flex;
+}
+
 /*base typography*/
 @font-face {
   font-family: "shrikhand";
@@ -273,6 +277,8 @@ body > header {
 
 .operation {
   padding-top: 5rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .operation__lists {
   list-style: none;
@@ -319,6 +325,10 @@ body > header {
 .rest {
   background-color: whitesmoke;
   padding: 6rem 0;
+}
+.rest__blocklist {
+  max-width: 1440PX;
+  margin: 0 auto;
 }
 .rest__block {
   border-radius: 15px;
@@ -380,6 +390,8 @@ body > header {
   position: relative;
   top: -3rem;
   padding: 2rem 3.5rem 0 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -394,6 +406,12 @@ body > header {
        object-fit: cover;
   }
 }
+.menus {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .menu {
   flex: 1 1 33.33%;
 }
@@ -584,28 +602,37 @@ body > header {
 
 .icon {
   font-size: 2rem;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon--default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: opacity 0.3s;
-  display: block;
   position: absolute;
-  right: 35px;
+  transform: scale(0.85);
 }
 .icon--default:hover {
   opacity: 0;
 }
 .icon--hover {
-  transition: opacity 0.3s;
-  transform: scale(1.2);
-  opacity: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  right: 35px;
+  transition: opacity 0.3s;
+  transform: scale(1);
+  opacity: 0;
   background: -webkit-linear-gradient(175deg, #ff94e1 0%, #a06be1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
 }
 .icon--hover:hover {
   opacity: 1;
@@ -616,6 +643,10 @@ body > header {
   background-color: #363636;
   color: whitesmoke;
   padding: 2.5rem;
+}
+.foot__container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .foot__logo {
   padding-bottom: 2.5rem;
@@ -632,4 +663,21 @@ body > header {
 }
 .foot__item a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .foot__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foot__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+  }
+  .foot__item {
+    margin: 0 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
