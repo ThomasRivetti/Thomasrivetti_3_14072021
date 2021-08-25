@@ -41,7 +41,7 @@
         transform: scale(1);
         opacity: 0;        
         background: -webkit-linear-gradient(175deg, lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
-        background-clip: text;
+        // background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: ease-in-out .3s;
